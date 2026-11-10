@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maxim Pilipenko, Data Science &amp; AI student</title>
+<meta name="description" content="Data Science &amp; AI student looking for a junior data, BI or business analyst role. Python, SQL, R and Excel, plus a credit-risk project on 58.4 million rows.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Maxim Pilipenko, Data Science &amp; AI student">
+<meta property="og:description" content="Numbers have to earn my trust. Looking for a junior data, BI or business analyst role in Israel.">
+<meta name="theme-color" content="#EDF1EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1724" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%8E%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap">
+<style>
+:root {
+  --paper: #EDF1EC;
+  --slip: #F9FBF8;
+  --ink: #172235;
+  --ink-2: #4A5668;
+  --rule: #C8D1CA;
+  --pen: #C7253E;
+  --bar: #74849A;
+  color-scheme: light;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0F1724;
+    --slip: #162133;
+    --ink: #E4EAE5;
+    --ink-2: #A7B3C2;
+    --rule: #2B3B52;
+    --pen: #FF6B7D;
+    --bar: #8A9CB3;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0F1724;
+  --slip: #162133;
+  --ink: #E4EAE5;
+  --ink-2: #A7B3C2;
+  --rule: #2B3B52;
+  --pen: #FF6B7D;
+  --bar: #8A9CB3;
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: inherit; }
+html {
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.62;
+  font-optical-sizing: auto;
+  font-variant-numeric: lining-nums;
+}
+@media (min-width: 700px) { body { font-size: 1.125rem; } }
+
+a { color: inherit; text-decoration-line: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 3px; }
+h1, h2, h3 { font-weight: 600; text-wrap: balance; }
+p { margin: 0 0 1rem; text-wrap: pretty; }
+p:last-child { margin-bottom: 0; }
+
+.wrap {
+  max-width: 70rem;
+  margin-inline: auto;
+  padding-left: max(1.25rem, env(safe-area-inset-left, 0px));
+  padding-right: max(1.25rem, env(safe-area-inset-right, 0px));
+}
+@media (min-width: 700px) {
+  .wrap {
+    padding-left: max(2.5rem, env(safe-area-inset-left, 0px));
+    padding-right: max(2.5rem, env(safe-area-inset-right, 0px));
+  }
+}
+
+/* Intro */
+.hero { display: grid; gap: 3rem; padding-top: 3.5rem; padding-bottom: 4rem; }
+@media (min-width: 900px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 25rem);
+    gap: 5rem;
+    align-items: center;
+    padding-top: 6.5rem;
+    padding-bottom: 6rem;
+  }
+}
+.hero h1 {
+  font-size: clamp(2.5rem, 7vw, 3.75rem);
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+  margin: 0 0 0.9rem;
+}
+.tagline { font-size: clamp(1.5rem, 3.2vw, 2rem); line-height: 1.25; max-width: 22ch; margin-bottom: 1.25rem; }
+.lede { max-width: 34rem; margin-bottom: 0.75rem; }
+.where { color: var(--ink-2); max-width: 34rem; margin-bottom: 2rem; }
+
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 0; padding: 0; list-style: none; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.875rem;
+  padding: 0.5rem 1.15rem;
+  border: 1.5px solid var(--ink);
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  color: var(--ink);
+  background: transparent;
+}
+.btn:hover { background: var(--slip); }
+.btn--solid { background: var(--ink); color: var(--paper); }
+.btn--solid:hover { background: var(--ink); color: var(--paper); opacity: 0.88; }
+
+/* Exhibit A: the record slip */
+.record { margin: 0; }
+.slip { background: var(--slip); border: 1px solid var(--rule); border-radius: 8px; padding: 0.25rem 1.25rem; }
+.slip table { width: 100%; border-collapse: collapse; }
+.slip th, .slip td { padding: 0.95rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.slip tr:last-child th, .slip tr:last-child td { border-bottom: 0; }
+.slip th { text-align: left; font-weight: 400; font-size: 0.9375rem; color: var(--ink-2); padding-right: 1rem; padding-top: 1.2rem; white-space: nowrap; }
+.slip td { text-align: right; font-size: 1.3125rem; line-height: 1.3; font-variant-numeric: tabular-nums lining-nums; }
+.slip tr.flag th, .slip tr.flag td { border-bottom: 0; padding-bottom: 0.35rem; }
+.slip tr.note-row td { padding-top: 0.2rem; }
+.slip .aside { display: block; margin-top: 0.2rem; font-size: 0.875rem; color: var(--ink-2); }
+.circled { position: relative; display: inline-block; }
+.pen {
+  position: absolute;
+  left: -14px;
+  top: -10px;
+  width: calc(100% + 28px);
+  height: calc(100% + 20px);
+  overflow: visible;
+  pointer-events: none;
+}
+.pen path {
+  fill: none;
+  stroke: var(--pen);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1 2;
+  stroke-dashoffset: 1.05;
+  animation: draw 0.9s 0.5s cubic-bezier(0.55, 0.1, 0.3, 1) forwards;
+}
+.note {
+  display: block;
+  font-size: 0.9375rem;
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--pen);
+  opacity: 0;
+  animation: appear 0.35s 1.35s ease-out forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes appear { to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .pen path { animation: none; stroke-dashoffset: 0; }
+  .note { animation: none; opacity: 1; }
+}
+.record figcaption { margin-top: 1rem; font-size: 0.9375rem; line-height: 1.5; color: var(--ink-2); }
+
+/* Resume sections */
+.row { display: grid; gap: 1rem 3rem; padding-top: 2.75rem; padding-bottom: 2.75rem; border-top: 1px solid var(--rule); }
+@media (min-width: 900px) { .row { grid-template-columns: 13rem minmax(0, 42rem); } }
+.row > h2 { margin: 0; font-size: 1.3125rem; line-height: 1.3; }
+.entry + .entry { margin-top: 2.25rem; }
+.entry h3 { margin: 0; font-size: 1.25rem; line-height: 1.3; }
+.meta { margin: 0.2rem 0 0.75rem; font-size: 0.9375rem; color: var(--ink-2); }
+.entry > .meta:last-child { margin-bottom: 0; }
+/* Margin notes: the jokes, in red pen */
+.margin { margin: 0.25rem 0 1rem; font-style: italic; line-height: 1.45; color: var(--pen); }
+.body > .margin:last-child, .entry > .margin:last-child { margin-bottom: 0; }
+.bullets { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.55rem; }
+.bullets li { position: relative; padding-left: 1.25rem; }
+.bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0.1rem;
+  top: 0.62em;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: var(--bar);
+}
+.bullets + .margin { margin-top: 1rem; }
+.more { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 1rem; font-size: 0.9375rem; }
+
+.tools { margin: 0 0 1.25rem; display: grid; gap: 0.85rem; }
+.tools div { display: grid; gap: 0.05rem 1.5rem; }
+@media (min-width: 640px) { .tools div { grid-template-columns: 9.5rem minmax(0, 1fr); } }
+.tools dt { font-weight: 600; }
+.tools dd { margin: 0; }
+
+.closing { border-top: 1px solid var(--rule); padding-top: 3.5rem; padding-bottom: 3rem; }
+.closing h2 { font-size: clamp(1.75rem, 3.6vw, 2.25rem); line-height: 1.15; letter-spacing: -0.01em; margin: 0 0 0.75rem; }
+.closing p { max-width: 34rem; margin-bottom: 1.5rem; }
+.foot { border-top: 1px solid var(--rule); padding-top: 1.25rem; padding-bottom: 3rem; font-size: 0.875rem; font-style: italic; color: var(--ink-2); }
+</style>
+</head>
+<body>
+
+<header class="hero wrap">
+  <div class="intro">
+    <h1>Maxim Pilipenko</h1>
+    <p class="tagline">Numbers have to earn my trust.</p>
+    <p class="lede">I’m a Data Science &amp; AI student looking for a junior data, BI or business analyst role. I check that a number makes sense before it gets anywhere near a model.</p>
+    <p class="where">Based in Karmiel, open to roles in the North and Center, as a student position or full-time.</p>
+    <ul class="actions">
+      <li><a class="btn btn--solid" href="#work">See my work</a></li>
+      <li><a class="btn" href="https://www.linkedin.com/in/maxim-pilipenko-135154324/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a class="btn" href="https://github.com/pilipenkomaxim" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    </ul>
+  </div>
+
+  <figure class="record">
+    <div class="slip">
+      <table aria-label="One loan application from the Home Credit data">
+        <tbody>
+          <tr class="flag">
+            <th scope="row">Income</th>
+            <td>
+              <span class="circled">117,000,000<svg class="pen" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" d="M30 10 C80 -2 160 0 188 14 C204 24 196 46 158 53 C112 61 44 60 16 47 C-2 38 4 18 40 9 C58 5 76 4 96 6"/></svg></span>
+            </td>
+          </tr>
+          <tr class="note-row">
+            <td colspan="2"><span class="note">Most likely 117,000, recorded 1,000× too big</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Amount borrowed</th>
+            <td>562,491</td>
+          </tr>
+          <tr>
+            <th scope="row">Credit-to-income</th>
+            <td>0.005<span class="aside">population median near 3</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Outcome</th>
+            <td>Defaulted</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <figcaption>Exhibit A, straight from the Home Credit data. Earning 117 million and defaulting on half a million would be quite the plot twist.</figcaption>
+  </figure>
+</header>
+
+<main>
+  <section class="row wrap" id="experience" aria-labelledby="experience-h">
+    <h2 id="experience-h">Experience</h2>
+    <div class="body">
+      <article class="entry">
+        <h3>Operations &amp; Inventory Manager</h3>
+        <p class="meta">Comedy Store, a convenience store, 2023–2026</p>
+        <p class="margin">Yes, it was really called Comedy Store. The expiry dates were no joke.</p>
+        <ul class="bullets">
+          <li>Tracked sales and stock in the Aviv POS system, from purchasing to back-office reports.</li>
+          <li>Used min/max reorder thresholds to decide what to buy and when.</li>
+          <li>Returned stock close to its expiry date to suppliers for full or partial refunds, instead of writing it off.</li>
+        </ul>
+      </article>
+      <article class="entry">
+        <h3>Math tutor</h3>
+        <p class="meta">Perach project, 2026</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="row wrap" id="work" aria-labelledby="work-h">
+    <h2 id="work-h">Project</h2>
+    <div class="body">
+      <article class="entry">
+        <h3>Credit default risk on 58.4 million rows</h3>
+        <p class="meta">Python, SQL and PostgreSQL, scikit-learn, XGBoost, Jupyter</p>
+        <ul class="bullets">
+          <li>Loaded the seven related tables of the Home Credit Default Risk dataset, 58.4 million rows in total, into PostgreSQL and indexed the join keys.</li>
+          <li>Judged extreme values by whether the rest of the record backed them up, not by a cut-off rule. That’s how Exhibit A turned up, along with 55,374 applicants “employed” for about 1,000 years: a placeholder for no current job, and 99.96% of them were pensioners.</li>
+          <li>Dropped 28 redundant housing columns (three versions each of 14 measurements, correlated at 0.97–0.998) and ten near-constant flags.</li>
+          <li>On the application table, baseline models reached a PR-AUC of 0.217 with logistic regression and 0.234 with untuned XGBoost, against a no-skill baseline of 0.0807.</li>
+          <li>Turned down a 0.002 “improvement” because cross-validation put the noise at about 0.017.</li>
+        </ul>
+        <p class="margin">Smaller than the noise means it didn’t happen.</p>
+        <p class="more">
+          <a href="https://github.com/pilipenkomaxim/home-credit-ev-model" target="_blank" rel="noopener noreferrer">Code on GitHub</a>
+          <a href="https://github.com/pilipenkomaxim/home-credit-ev-model/blob/main/notebooks/02_cleaning_preparation.ipynb" target="_blank" rel="noopener noreferrer">The cleaning notebook</a>
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="row wrap" id="tools" aria-labelledby="tools-h">
+    <h2 id="tools-h">Toolbox</h2>
+    <div class="body">
+      <dl class="tools">
+        <div><dt>Python</dt><dd>pandas, NumPy, scikit-learn, XGBoost, statsmodels, Matplotlib, Jupyter</dd></div>
+        <div><dt>SQL</dt><dd>PostgreSQL</dd></div>
+        <div><dt>R</dt><dd>dplyr, ggplot2, time-series models</dd></div>
+        <div><dt>Spreadsheets</dt><dd>Excel and Google Sheets, at an advanced level</dd></div>
+        <div><dt>Slides and BI</dt><dd>PowerPoint, plus the basics of Power BI</dd></div>
+        <div><dt>AI assistants</dt><dd>Claude, Claude Code, ChatGPT, Gemini, Perplexity</dd></div>
+        <div><dt>Also</dt><dd>GitHub, and the Aviv POS retail system</dd></div>
+      </dl>
+      <p class="margin">AI writes my boilerplate. The analytical calls stay mine.</p>
+    </div>
+  </section>
+
+  <section class="row wrap" id="education" aria-labelledby="education-h">
+    <h2 id="education-h">Education</h2>
+    <div class="body">
+      <article class="entry">
+        <h3>Western Galilee College</h3>
+        <p class="meta">B.A. student, specialising in Data Science &amp; AI, 2025–2027</p>
+        <p>Coursework includes machine learning in Python, econometrics in R, statistics and data analysis, corporate finance and investments, and accounting.</p>
+      </article>
+      <article class="entry">
+        <h3>Magshimim and StarTech</h3>
+        <p class="meta">Two years each, 2019–2023</p>
+        <p>C, C#, Python, networking and Wireshark at Magshimim. Java and Arduino at StarTech.</p>
+        <p class="margin">Writing code since 2019.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="row wrap" id="languages" aria-labelledby="languages-h">
+    <h2 id="languages-h">Languages</h2>
+    <div class="body">
+      <p>Hebrew and Russian, native. English, fluent.</p>
+      <p class="margin">Plus Python, R and SQL for talking to data.</p>
+    </div>
+  </section>
+
+  <section class="closing wrap" aria-labelledby="contact-h">
+    <h2 id="contact-h">Hiring a junior analyst?</h2>
+    <p>Message me on LinkedIn, or look through my code on GitHub first.</p>
+    <ul class="actions">
+      <li><a class="btn btn--solid" href="https://www.linkedin.com/in/maxim-pilipenko-135154324/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a></li>
+      <li><a class="btn" href="https://github.com/pilipenkomaxim" target="_blank" rel="noopener noreferrer">GitHub profile</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <p>No incomes were inflated 1,000× in the making of this site.</p>
+</footer>
+
+</body>
+</html>
